@@ -1,0 +1,5 @@
+/* Laptops */
+@media screen  and (min-device-width: 1200px)  and (max-device-width: 1600px)  and (-webkit-min-device-pixel-ratio: 1) {
+    /* Blocks */
+    .block-menu-canvas .blocks-section > .block:nth-child(2) .text-section .text-canvas, .block-menu-canvas .blocks-section > .block:last-child .text-section .text-canvas { padding-left: 1rem; } 
+}
