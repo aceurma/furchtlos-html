@@ -5,9 +5,9 @@
     <title>Home | Furchtlos</title>
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="H-FARM | Innovation Platform" />
-    <meta property="og:description" content="Discover H-FARM: we are a digital platform which helps young people and new born companies to move their business into a digital way of t..." />
-    <meta name="description" content="Discover H-FARM: we are a digital platform which helps young people and new born companies to move their business into a digital way of t...">
+    <meta property="og:title" content="Home | Furchtlos" />
+    <meta property="og:description" content="Furchtlos Description" />
+    <meta name="description" content="Furchtlos Description">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
     <!-- STYLESHEETS -->
@@ -16,6 +16,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/media.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/nouislider/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/splide/splide.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/owlcarousel/owl.theme.default.min.css">
 </head>
@@ -68,33 +71,104 @@
     </nav>
 </div>
 
-<div class="slider-full-canvas container-fluid pb-4">
+<div id="main-slider" class="slider-full-canvas container-fluid pb-4">
     <div class="row">
         <div class="col-lg-12 px-0 mx-0">
             <div class="carousel-section p-relative">
-                <div class="overlay diag-overlay right text-light pa-center"></div>
-                <div class="carousel-full owl-carousel owl-theme">
-                    <div class="item h-100vh-header w-100">
-                        <div class="pa-center text-light">
-                            <div class="bg-section">
-                                <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/sliders/home/s1.jpg');">
+                <div id="carousel-full" class="splide" role="group">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide item h-100vh-header" tab-index="1">
+                                <div class="pa-center text-light">
+                                    <div class="bg-section">
+                                        <div class="overlay diag-overlay right text-light pa-center" data-aos="fade-right"></div>
+                                        <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/sliders/home/s1.jpg');">
+                                        </div>
+                                    </div>
+        
+                                    <div class="text-section d-flex flex-column justify-content-end pa-center p-5">
+                                        <div class="row align-items-end">
+                                            <div class="col-lg-5">
+                                                <div class="text-canvas d-flex flex-column justify-content-center">
+                                                    <h1 class="head text-uppercase">Ride<br>your way</h1>
+                                                    <p class="desc">At Furchtlos , we believe that great experiences are born from breaking rules and pushing limits...</p>
+                                                    <div class="button-section deco-none mt-3">
+                                                        <a href="#"><img class="icon-hex d-inline mr-3" src="assets/img/icons/hex-icon.svg">Explore</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="d-flex flex-column justify-content-end pa-center p-5">
-                                <div class="row align-items-end">
-                                    <div class="col-lg-5">
-                                        <div class="text-canvas d-flex flex-column justify-content-center">
-                                            <h1 class="head text-uppercase">Ride<br>your way</h1>
-                                            <p class="desc">At Furchtlos , we believe that great experiences are born from breaking rules and pushing limits...</p>
-                                            <div class="button-section deco-none mt-3">
-                                                <a href="#"><img class="icon-hex d-inline mr-3" src="assets/img/icons/hex-icon.svg">Explore</a>
+                            <div class="splide__slide item h-100vh-header" tab-index="2">
+                                <div class="pa-center text-light">
+                                    <div class="bg-section">
+                                        <div class="overlay diag-overlay right text-light pa-center" data-aos="fade-right"></div>
+                                        <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/home/banners/banner_alum-cases.jpg');">
+                                        </div>
+                                    </div>
+        
+                                    <div class="text-section d-flex flex-column justify-content-end pa-center p-5">
+                                        <div class="row align-items-end">
+                                            <div class="col-lg-5">
+                                                <div class="text-canvas d-flex flex-column justify-content-center">
+                                                    <h1 class="head text-uppercase">Ride<br>your way</h1>
+                                                    <p class="desc">At Furchtlos , we believe that great experiences are born from breaking rules and pushing limits...</p>
+                                                    <div class="button-section deco-none mt-3">
+                                                        <a href="#"><img class="icon-hex d-inline mr-3" src="assets/img/icons/hex-icon.svg">Explore</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="splide__slide item h-100vh-header" tab-index="3">
+                                <div class="pa-center text-light">
+                                    <div class="bg-section">
+                                        <div class="overlay diag-overlay right text-light pa-center" data-aos="fade-right"></div>
+                                        <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/home/banners/banner_motor-bags.jpg');">
+                                        </div>
+                                    </div>
+        
+                                    <div class="text-section d-flex flex-column justify-content-end pa-center p-5">
+                                        <div class="row align-items-end">
+                                            <div class="col-lg-5">
+                                                <div class="text-canvas d-flex flex-column justify-content-center">
+                                                    <h1 class="head text-uppercase">Ride<br>your way</h1>
+                                                    <p class="desc">At Furchtlos , we believe that great experiences are born from breaking rules and pushing limits...</p>
+                                                    <div class="button-section deco-none mt-3">
+                                                        <a href="#"><img class="icon-hex d-inline mr-3" src="assets/img/icons/hex-icon.svg">Explore</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="slider-thumb-section p-relative">
+                    <div id="carousel-thumb" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="assets/img/sliders/home/s1.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="assets/img/home/banners/banner_alum-cases.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="assets/img/home/banners/banner_motor-bags.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="slider-snap"></div>
+                    <div class="page-no-section">
+                        <span class="current mr-1">01</span>/<span class="total ml-1">03</span>
                     </div>
                 </div>
             </div>
@@ -109,14 +183,15 @@
                 <div class="banner-section p-relative h-100vh-header w-100">
                     <div class="pa-center text-light">
                         <div class="bg-section">
-                            <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/home/banners/banner_alum-cases.jpg');">
+                            <div class="overlay diag-overlay right text-light pa-center" data-aos="fade-right" style="clip-path: polygon(40% 0%, 85% 0%, 20% 100%, -20% 100%)!important;"></div>
+                            <div class="bg-cover-center pa-center inview_zoomIn" data-parallax="scroll" data-image-src="assets/img/home/banners/banner_alum-cases.jpg">
                             </div>
                         </div>
 
                         <div class="d-flex flex-column justify-content-start pa-center p-5">
                             <div class="row justify-content-end align-items-end">
                                 <div class="col-lg-3">
-                                    <div class="text-canvas d-flex flex-column justify-content-center p-relative pt-4">
+                                    <div class="text-canvas d-flex flex-column justify-content-center p-relative pt-4" data-aos="fade-left">
                                         <h1 class="head text-uppercase m-0">Aluminum Cases</h1>
                                         <p class="head text-uppercase overlay text-overlay right">Cases</p>
                                         <div class="button-section deco-none mt-3">
@@ -140,14 +215,14 @@
                 <div class="banner-section p-relative h-100vh-header w-100">
                     <div class="pa-center text-light">
                         <div class="bg-section">
-                            <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/home/banners/banner_motor-bags.jpg');">
+                            <div class="bg-cover-center pa-center inview_zoomIn" data-parallax="scroll" data-image-src="assets/img/home/banners/banner_motor-bags.jpg">
                             </div>
                         </div>
 
                         <div class="d-flex flex-column justify-content-start pa-center p-5">
                             <div class="row justify-content-start align-items-end">
                                 <div class="col-lg-3">
-                                    <div class="text-canvas d-flex flex-column justify-content-center p-relative pt-4 p-5">
+                                    <div class="text-canvas d-flex flex-column justify-content-center p-relative pt-4 p-5" data-aos="fade-right">
                                         <h1 class="head text-uppercase m-0">Motorcycle Bags</h1>
                                         <p class="head text-uppercase overlay text-overlay left">Bags</p>
                                         <div class="button-section deco-none mt-3">
@@ -171,14 +246,15 @@
                 <div class="banner-section p-relative h-100vh-header w-100">
                     <div class="pa-center text-light">
                         <div class="bg-section">
-                            <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/home/banners/banner_motor-clothing.jpg');">
+                            <div class="overlay diag-overlay right text-light pa-center" data-aos="fade-left" style="clip-path: polygon(70% 0, 90% 0, 120% 100%, 100% 100%)!important; width: auto!important;"></div>
+                            <div class="bg-cover-center pa-center inview_zoomIn" data-parallax="scroll" data-image-src="assets/img/home/banners/banner_motor-clothing.jpg">
                             </div>
                         </div>
 
                         <div class="d-flex flex-column justify-content-center pa-center p-5">
                             <div class="row justify-content-end align-items-end">
                                 <div class="col-lg-5">
-                                    <div class="text-canvas d-flex flex-column justify-content-center p-relative pt-4 p-5">
+                                    <div class="text-canvas d-flex flex-column justify-content-center p-relative pt-4 p-5" data-aos="fade-left">
                                         <h1 class="head text-uppercase m-0">Motorcycle Clothing</h1>
                                         <p class="head text-uppercase overlay text-overlay right">Clothing</p>
                                         <div class="button-section deco-none mt-3">
@@ -202,14 +278,14 @@
                 <div class="banner-section p-relative h-100vh-header w-100">
                     <div class="pa-center text-light">
                         <div class="bg-section">
-                            <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/home/banners/banner_motor-lights.jpg');">
+                            <div class="bg-cover-center pa-center inview_zoomIn" data-parallax="scroll" data-image-src="assets/img/home/banners/banner_motor-lights.jpg">
                             </div>
                         </div>
 
                         <div class="d-flex flex-column justify-content-start pa-center p-5">
                             <div class="row justify-content-start align-items-end">
                                 <div class="col-lg-3">
-                                    <div class="text-canvas d-flex flex-column justify-content-center p-relative pt-4 p-5">
+                                    <div class="text-canvas d-flex flex-column justify-content-center p-relative pt-4 p-5" data-aos="fade-right">
                                         <h1 class="head text-uppercase m-0">Motorcycle Lights</h1>
                                         <p class="head text-uppercase overlay text-overlay left">Lights</p>
                                         <div class="button-section deco-none mt-3">
@@ -226,11 +302,11 @@
     </div>
 </div>
 
-<div class="basic-banner-canvas py-4 my-4" style="background-image: url('assets/img/home/banners/banner_mission.jpg');">
+<div class="basic-banner-canvas py-4 my-4" data-parallax="scroll" data-image-src="assets/img/home/banners/banner_mission.jpg">
     <div class="container d-flex flex-column">
        <div class="row text-align-center justify-content-center">
-           <div class="col-md-7 text-center text-light my-4 py-4">
-               <div class="text-section p-relative pt-4">
+           <div class="col-md-7 text-center text-light my-4 py-4" data-aos="fade-right">
+               <div class="text-canvas p-relative pt-4">
                     <h1 class="head text-uppercase">Our Mission</h1>
                     <p class="head text-uppercase overlay text-overlay center">Mission</p>
                     <p class="desc stylized">At <b class="text-uppercase">Furchtlos</b>, we believe that great experiences are born from <b>breaking rules</b> and <b>pushing limits...</b></p> 
@@ -247,58 +323,76 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 p-0">
-                <div class="blocks-section d-flex flex-row">
-                    <div class="block block-1 p-relative text-light">
-                        <img class="bg-image" src="assets/img/home/block-1.jpg" alt="">
-                        <div class="text-section pa-center">
-                            <div class="d-flex flex-column justify-content-end pa-center p-5">
-                                <div class="row justify-content-start align-items-end">
-                                    <div class="col-lg-8">
-                                        <div class="text-canvas d-flex flex-column justify-content-center">
-                                            <h5 class="head text-uppercase m-0">Colove 400RR Revealed</h5>
-                                            <div class="button-section deco-none mt-3">
-                                                <a href="#"><img class="icon-hex d-inline mr-3" src="assets/img/icons/hex-icon.svg">Read More</a>
+                <div class="blocks-section d-flex flex-row justify-content-center">
+                    <span class="block-wrapper">
+                        <div class="block block-1 p-relative text-light">
+                            <div class="overlay full pa-center"></div>
+                            <img class="bg-image" src="assets/img/home/block-1.jpg" alt="">
+                            <div class="text-section pa-center">
+                                <div class="d-flex flex-column justify-content-end pa-center p-5">
+                                    <div class="row justify-content-start align-items-end">
+                                        <div class="col-lg-8">
+                                            <div class="text-canvas d-flex flex-column justify-content-center">
+                                                <h5 class="head text-uppercase m-0">Colove 400RR Revealed</h5>
+                                                <div class="button-section deco-none mt-3">
+                                                    <a href="#"><img class="icon-hex d-inline mr-3" src="assets/img/icons/hex-icon.svg">Read More</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="block block-2 p-relative text-light">
-                        <img class="bg-image" src="assets/img/home/block-2.jpg" alt="">
-                        <div class="text-section pa-center">
-                            <div class="d-flex justify-content-start pa-center p-5">
-                                <div class="row justify-content-end align-items-end">
-                                    <div class="col-lg-10">
-                                        <div class="text-canvas d-flex flex-column justify-content-center">
-                                            <h5 class="head text-uppercase m-0">new product alert 2023</h5>
-                                            <div class="button-section deco-none mt-3">
-                                                <a href="#"><img class="icon-hex d-inline mr-3" src="assets/img/icons/hex-icon.svg">Read More</a>
+                    </span>
+
+                    <span class="block-wrapper">
+                        <div class="block block-2 p-relative text-light">
+                            <div class="overlay full pa-center"></div>
+                            <img class="bg-image" src="assets/img/home/block-2.jpg" alt="">
+                            <div class="text-section pa-center">
+                                <div class="d-flex justify-content-start pa-center p-5">
+                                    <div class="row justify-content-end align-items-end">
+                                        <div class="col-lg-10">
+                                            <div class="text-canvas d-flex flex-column justify-content-center">
+                                                <h5 class="head text-uppercase m-0">new product alert 2023</h5>
+                                                <div class="button-section deco-none mt-3">
+                                                    <a href="#"><img class="icon-hex d-inline mr-3" src="assets/img/icons/hex-icon.svg">Read More</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="block block-3 p-relative text-light">
-                        <img class="bg-image" src="assets/img/home/block-3.jpg" alt="">
-                        <div class="text-section pa-center">
-                            <div class="d-flex justify-content-start pa-center p-5">
-                                <div class="row justify-content-end align-items-end">
-                                    <div class="col-lg-10">
-                                        <div class="text-canvas d-flex flex-column justify-content-center">
-                                            <h5 class="head text-uppercase m-0">conquered coldest conditions</h5>
-                                            <div class="button-section deco-none mt-3">
-                                                <a href="#"><img class="icon-hex d-inline mr-3" src="assets/img/icons/hex-icon.svg">Read More</a>
+                    </span>
+
+                    <span class="block-wrapper">
+                        <div class="block block-3 p-relative text-light">
+                            <div class="overlay full pa-center"></div>
+                            <img class="bg-image" src="assets/img/home/block-3.jpg" alt="">
+                            <div class="text-section pa-center">
+                                <div class="d-flex flex-column justify-content-between pa-center p-5">
+                                    <div class="row justify-content-end align-items-start text-end">
+                                        <div class="col-lg-12">
+                                            <div class="button-section deco-none">
+                                                <a href="#" class="btn btn-transparent px-3">News & Blogs</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-end align-items-end">
+                                        <div class="col-lg-10">
+                                            <div class="text-canvas d-flex flex-column justify-content-center">
+                                                <h5 class="head text-uppercase m-0">conquered coldest conditions</h5>
+                                                <div class="button-section deco-none mt-3">
+                                                    <a href="#"><img class="icon-hex d-inline mr-3" src="assets/img/icons/hex-icon.svg">Read More</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </span>
                 </div>
             </div>
         </div>
@@ -315,7 +409,7 @@
                         <div class="d-flex flex-column justify-content-center pa-center p-5">
                             <div class="row justify-content-start align-items-end">
                                 <div class="col-lg-8">
-                                    <div class="text-canvas d-flex flex-column justify-content-center pl-5">
+                                    <div class="text-canvas d-flex flex-column justify-content-center pl-5" data-aos="fade-right">
                                         <h1 class="head text-uppercase mb-2">Find a Dealer</h1>
                                         <p class="desc m-0">Want to shop out products in person? Find the Furchtlos dealer closest to you.</p>
                                         <div class="button-section deco-none mt-4">
@@ -408,28 +502,75 @@
 <script src="assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="assets/plugins/aos/aos.js"></script>
 <script src="assets/plugins/nouislider/nouislider.min.js"></script>
+<script src="assets/plugins/splide/splide.min.js"></script>
 <script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+<script src="assets/plugins/parallax/parallax.min.js"></script>
 <script src="assets/plugins/fontawesome/all.js"></script>
+<script src="assets/plugins/nouislider/nouislider.min.js"></script>
 <script src="assets/js/script.js"></script>
 
 <script type="text/javascript">
 
-$('.carousel-full').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
+var main = new Splide('#carousel-full', {
+    rewind    : true,
+    pagination: false,
+    arrows    : false,
+    autoplay: true,
+    interval: 5000
+});
+
+var thumbs = new Splide('#carousel-thumb', {
+    fixedWidth  : 215,
+    fixedHeight : 200,
+    gap         : 10,
+    rewind      : true,
+    pagination  : false,
+    isNavigation: true,
+    arrows: false,
+    breakpoints : {
+      600: {
+        fixedWidth : 60,
+        fixedHeight: 44,
+      },
+    },
+});
+
+main.sync(thumbs);
+main.mount();
+thumbs.mount();
+
+var snapSlider = document.getElementById('slider-snap');
+noUiSlider.create(snapSlider, {
+    start: [1, 1],
+    step: 1,
+    connect: true,
+    tooltips: false,
+    margin: 0,
+    format: {
+        from: Number,
+        to: function(value) {
+            return (parseInt(value));
+            // return (parseInt(value)+" years old");
         }
+    },
+    range: {
+        'min': 1,
+        'max': 3
     }
-})
+});
+
+// Change slide based on step slider value
+snapSlider.noUiSlider.on('slide', function() {
+    var index = snapSlider.noUiSlider.get(true);
+    console.log(index[1]);
+    main.go(index[1] - 1);
+});
+
+// Change values of noUISlider and pagination on slider move
+main.on('move', function (newIndex) {
+  snapSlider.noUiSlider.set([null, newIndex + 1]);
+  $('.slider-thumb-section .page-no-section span.current').html("0" + (newIndex + 1));
+});
 
 </script>
 </body>
