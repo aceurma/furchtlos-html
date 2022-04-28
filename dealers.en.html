@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta charset="utf-8">
+<head>
+    <title>Dealers | Furchtlos</title>
+    <meta property="og:type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Home | Furchtlos" />
+    <meta property="og:description" content="Furchtlos Description" />
+    <meta name="description" content="Furchtlos Description">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/fontawesome/all.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/media.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/owlcarousel/owl.theme.default.min.css">
+</head>
+
+<body class="w-limiter">
+<!-- MAIN MENU -->
+<div class="main-navbar-canvas sticky-top w-limiter sticky-negative">
+    <nav class="navbar-canvas navbar navbar-expand-lg navbar-light bg-gray-200 text-dark py-0">
+        <div class="container-fluid d-flex justify-content-between align-items-center px-5">
+            <div class="col-12 col-lg-2 navbar-brand deco-none m-0">
+                <div class="logo w-100">     
+                    <img class="brand mr-2" src="assets/img/general/brand.svg" alt="Brand">
+                    <img class="logo" src="assets/img/general/logo.svg" alt="Brand">
+                </div>
+            </div>
+            <div class="col-12 col-lg-10 menu-section d-flex justify-content-end align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="nav-menu-section">
+                        <ul class="navbar-nav d-flex justify-content-end h-100">
+                            <li class="text-uppercase mr-5 deco-none"><a href="#">About Us</a></li>
+                            <li class="text-uppercase mr-5 deco-none drop-link" data-target="dropdown-mnb-products">
+                                <a href="#">View Products</a><i class="fa-solid fa-angle-down ml-2 mb-1"></i>
+                                <div class="drop-sub dropdown-mnb-products bg-black-o-50 text-light py-4 hidden">
+                                    <ul class="d-flex justify-content-end align-items-center flex-row no-bullets m-0">
+                                        <li class="text-uppercase mx-5"><a href="#">Cases</a></li>
+                                        <li class="text-uppercase mx-5"><a href="#">Bags</a></li>
+                                        <li class="text-uppercase mx-5"><a href="#">Accessories</a></li>
+                                        <li class="text-uppercase mx-5"><a href="#">Clothing</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="text-uppercase mr-5 deco-none"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="socmed-section d-flex align-items-center">
+                    <a class="nav-link btn btn-black text-light" href="#">Find a Dealer</a>
+                    <div class="lang deco-none mx-4">
+                        <a href="javascript:void(0)" class="active">EN</a>
+                        <span class="separator mx-1"> </span>
+                        <a href="javascript:void(0)">CN</a>
+                    </div>
+                    <div class="socmed d-flex">
+                        <a href="javascript:void(0)" class="btn btn-dark btn-light mr-2"><i class="fa-brands fa-weixin"></i></a>
+                        <a href="javascript:void(0)"class="btn btn-dark btn-light"><i class="fa-brands fa-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="banner-full-canvas bg-cover-center small" style="background-image: url('assets/img/dealers/banner.jpg');">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="text-section text-light px-4 py-4 my-1">
+                    <h2 class="head text-uppercase m-0 pl-2 ml-1">Find a Dealer</h2>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<div class="dealer-canvas">
+    <div class="container-fluid">
+        <div class="dealer-content-section row d-flex justify-content-between py-5 px-5">
+            <div class="dealer-list-section pr-4">
+                <div class="options">
+                    <form>
+                        <div class="row mb-4">
+                            <div class="col-xl-12">
+                                <div class="search-box p-relative">
+                                    <input type="text" class="form-control" id="inputSearch">
+                                    <img src="assets/img/icons/search-icon.svg" alt="">
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="row mb-3">
+                            <div class="col-xl-6">
+                                <select id="inputProvince" class="form-select py-2">
+                                    <option selected>Province</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-6">
+                                <select id="inputCity" class="form-select py-2">
+                                    <option selected>City</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </div> 
+                        <div class="row mb-2">
+                            <div class="col-xl-6">
+                                <select id="inputDistrict" class="form-select py-2">
+                                    <option selected>District</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-6">
+                                <select id="inputDistance" class="form-select py-2">
+                                    <option selected>100 mi</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+                <div class="list">
+                    <div class="accordion accordion-flush" id="accordion-dealers">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="head-1">
+                                <button class="accordion-button px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                    FURCHTLOS Beijing 1
+                                </button>
+                            </h2>
+                            <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="head-1" data-bs-parent="#accordion-dealers">
+                                <div class="accordion-body">
+                                    <div class="address d-flex align-items-start">
+                                        <img src="assets/img/icons/pin-icon.svg" class="mr-3" alt="">
+                                        <p class="desc small">1st/F,Office Building B,Sparkle Roll Group, No. 40 Xing Fu Er Cun, Xin Dong Road, Chao Yang </p>
+                                    </div>
+                                    <div class="phone d-flex align-items-start">
+                                        <img src="assets/img/icons/phone-icon.svg" class="mr-3" alt="">
+                                        <p class="desc small">123-123-123-123</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="head-2">
+                                <button class="accordion-button px-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                    FURCHTLOS Beijing 2
+                                </button>
+                            </h2>
+                            <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="head-2" data-bs-parent="#accordion-dealers">
+                                <div class="accordion-body">
+                                    <div class="address d-flex align-items-start">
+                                        <img src="assets/img/icons/pin-icon.svg" class="mr-3" alt="">
+                                        <p class="desc small">1st/F,Office Building B,Sparkle Roll Group, No. 40 Xing Fu Er Cun, Xin Dong Road, Chao Yang </p>
+                                    </div>
+                                    <div class="phone d-flex align-items-start">
+                                        <img src="assets/img/icons/phone-icon.svg" class="mr-3" alt="">
+                                        <p class="desc small">123-123-123-123</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="head-3">
+                                <button class="accordion-button px-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                    FURCHTLOS Beijing 3
+                                </button>
+                            </h2>
+                            <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="head-3" data-bs-parent="#accordion-dealers">
+                                <div class="accordion-body">
+                                    <div class="address d-flex align-items-start">
+                                        <img src="assets/img/icons/pin-icon.svg" class="mr-3" alt="">
+                                        <p class="desc small">1st/F,Office Building B,Sparkle Roll Group, No. 40 Xing Fu Er Cun, Xin Dong Road, Chao Yang </p>
+                                    </div>
+                                    <div class="phone d-flex align-items-start">
+                                        <img src="assets/img/icons/phone-icon.svg" class="mr-3" alt="">
+                                        <p class="desc small">123-123-123-123</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="head-4">
+                                <button class="accordion-button px-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                                    FURCHTLOS Beijing 4
+                                </button>
+                            </h2>
+                            <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="head-4" data-bs-parent="#accordion-dealers">
+                                <div class="accordion-body">
+                                    <div class="address d-flex align-items-start">
+                                        <img src="assets/img/icons/pin-icon.svg" class="mr-3" alt="">
+                                        <p class="desc small">1st/F,Office Building B,Sparkle Roll Group, No. 40 Xing Fu Er Cun, Xin Dong Road, Chao Yang </p>
+                                    </div>
+                                    <div class="phone d-flex align-items-start">
+                                        <img src="assets/img/icons/phone-icon.svg" class="mr-3" alt="">
+                                        <p class="desc small">123-123-123-123</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="head-5">
+                                <button class="accordion-button px-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                                    FURCHTLOS Beijing 5
+                                </button>
+                            </h2>
+                            <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="head-5" data-bs-parent="#accordion-dealers">
+                                <div class="accordion-body">
+                                    <div class="address d-flex align-items-start">
+                                        <img src="assets/img/icons/pin-icon.svg" class="mr-3" alt="">
+                                        <p class="desc small">1st/F,Office Building B,Sparkle Roll Group, No. 40 Xing Fu Er Cun, Xin Dong Road, Chao Yang </p>
+                                    </div>
+                                    <div class="phone d-flex align-items-start">
+                                        <img src="assets/img/icons/phone-icon.svg" class="mr-3" alt="">
+                                        <p class="desc small">123-123-123-123</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-section">
+                <div class="map">
+                    <img src="assets/img/dummy/dealers-map.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-footer-canvas bg-black text-white">
+    <div class="container-fluid px-5 py-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="menu-section d-flex justify-content-between">
+                    <div class="links">
+                        <h6 class="text-uppercase">Products</h6>
+                        <ul class="deco-none no-bullets p-0">
+                            <li><a href="#">Cases</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Clothing</a></li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <h6 class="text-uppercase">Services</h6>
+                        <ul class="deco-none no-bullets p-0">
+                            <li><a href="#">About Furchtlos</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Find Your Dealer</a></li>
+                            <li><a href="#">Dealer Application</a></li>
+                            <li><a href="#">Warranty Registration</a></li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <h6 class="text-uppercase">Contact</h6>
+                        <ul class="contact deco-none no-bullets p-0">
+                            <div class="item mb-4">
+                                <li>General Enquiries:</li>
+                                <li><a href="mailto:service@furchtlos-moto.com"><i class="fa-solid fa-envelope mr-3"></i>service@furchtlos-moto.com</a></li>
+                            </div>
+                            <div class="item pt-1">
+                                <li>OEM Enquiries:</li>
+                                <li><a href="mailto:OEM@furchtlos-moto.com"><i class="fa-solid fa-envelope mr-3"></i>OEM@furchtlos-moto.com</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <h6 class="text-uppercase">Follow Us</h6>
+                        <ul class="socmed deco-none no-bullets p-0">
+                            <li class="mb-3"><a href="#"><i class="fa-brands fa-weixin mr-3"></i>WeChat</a></li>
+                            <li class="mb-3"><a href="#"><i class="fa-brands fa-weibo mr-3"></i>Weibo</a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram mr-3"></i>Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="links d-flex flex-column align-content-end">
+                        <div class="copyright text-end mb-4">
+                            <img class="logo mb-3" src="assets/img/general/logo.svg" alt="Brand">
+                            <p class="desc p-0">© 2022 All rights reserved</p>
+                        </div>
+                        <a class="btn btn-black text-light p-3" href="#">Apply to become a dealer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="disclaimer-section pt-4">
+                    <div class="links">
+                        <ul class="d-flex flex-row no-bullets deco-none p-0">
+                            <li class="mr-5"><a href="#">Disclaimer</a></li>
+                            <li class="mr-5"><a href="#">Privacy Policy</a></li>
+                            <li class="mr-5"><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/plugins/aos/aos.js"></script>
+<script src="assets/plugins/nouislider/nouislider.min.js"></script>
+<script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+<script src="assets/plugins/fontawesome/all.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
