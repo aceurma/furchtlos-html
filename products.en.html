@@ -16,6 +16,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/media.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/nouislider/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/splide/splide.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugins/owlcarousel/owl.theme.default.min.css">
 </head>
@@ -68,27 +71,51 @@
     </nav>
 </div>
 
-<div class="slider-full-canvas container-fluid pb-4">
+<div id="main-slider" class="slider-full-canvas container-fluid pb-4">
     <div class="row">
         <div class="col-lg-12 px-0 mx-0">
-            <div class="carousel-section p-relative">
-                <div class="overlay diag-overlay right text-light pa-center" style="clip-path: polygon(25% 0%, 45% 0%, 20% 100%, 0% 100%)!important; background-color: #ffffff;"></div>
-                <div class="carousel-full owl-carousel stylized owl-theme">
-                    <div class="item h-100vh-header w-100">
-                        <div class="pa-center text-light">
-                            <div class="bg-section">
-                                <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/sliders/home/s1.jpg');">
+            <div class="carousel-section stylized p-relative">
+                <div class="overlay transparent above pa-center d-flex justify-content-between">
+                    <div class="diag l-r pa-center first"></div>
+                    <div class="diag l-r pa-center last"></div>
+                    <div class="d-flex flex-column justify-content-start pa-center p-5">
+                        <div class="row justify-content-start align-items-end">
+                            <div class="col-lg-3">
+                                <div class="text-canvas d-flex flex-column justify-content-center p-relative pt-4 p-5" data-aos="fade-right">
+                                    <p class="head text-uppercase overlay text-overlay left">Aluminum Cases</p>
                                 </div>
                             </div>
-
-                            <div class="text-section d-flex flex-column justify-content-end pa-center p-5">
-                                <div class="row align-items-end">
-                                    <div class="col-lg-5">
-                                        <div class="text-canvas d-flex flex-column justify-content-center">
-                                            <h1 class="head text-uppercase">Ride<br>your way</h1>
-                                            <p class="desc">At Furchtlos , we believe that great experiences are born from breaking rules and pushing limits...</p>
-                                            <div class="button-section deco-none mt-3">
-                                                <a href="#"><img class="icon-hex d-inline mr-3" src="assets/img/icons/hex-icon.svg">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-full" class="splide" role="group">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide item h-100vh-header" tab-index="1">
+                                <div class="slide-wrapper">
+                                    <div class="pa-center text-light">
+                                        <div class="bg-section">
+                                            <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/dummy/sliders/slide-1.jpg');">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="splide__slide item h-100vh-header" tab-index="2">
+                                <div class="slide-wrapper">
+                                    <div class="pa-center text-light">
+                                        <div class="bg-section">
+                                            <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/dummy/sliders/slide-2.jpg');">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="splide__slide item h-100vh-header" tab-index="3">
+                                <div class="slide-wrapper">
+                                    <div class="pa-center text-light">
+                                        <div class="bg-section">
+                                            <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/dummy/sliders/slide-3.jpg');">
                                             </div>
                                         </div>
                                     </div>
@@ -96,50 +123,85 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item h-100vh-header w-100">
-                        <div class="pa-center text-light">
-                            <div class="bg-section">
-                                <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/sliders/home/s1.jpg');">
-                                </div>
-                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                            <div class="text-section d-flex flex-column justify-content-end pa-center p-5">
-                                <div class="row align-items-end">
-                                    <div class="col-lg-5">
-                                        <div class="text-canvas d-flex flex-column justify-content-center">
-                                            <h1 class="head text-uppercase">Ride<br>your way</h1>
-                                            <p class="desc">At Furchtlos , we believe that great experiences are born from breaking rules and pushing limits...</p>
-                                            <div class="button-section deco-none mt-3">
-                                                <a href="#"><img class="icon-hex d-inline mr-3" src="assets/img/icons/hex-icon.svg">Explore</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+<div class="slider-canvas pb-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="carousel-section">
+                    <div id="carousel-product-items" class="owl-carousel owl-theme">
+                        <div class="item d-flex align-items-end">
+                            <div class="image-section">
+                                <img src="assets/img/dummy/products/alum-cases/dummy.png" alt="">
+                            </div>
+                            <div class="text-section mb-5">
+                                <h1 class="head">FA46 TOP CASES #1</h1>
+                                <p class="desc">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="item d-flex align-items-end">
+                            <div class="image-section">
+                                <img src="assets/img/dummy/products/alum-cases/dummy.png" alt="">
+                            </div>
+                            <div class="text-section mb-5">
+                                <h1 class="head">FA46 TOP CASES #1</h1>
+                                <p class="desc">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="item d-flex align-items-end">
+                            <div class="image-section">
+                                <img src="assets/img/dummy/products/alum-cases/dummy.png" alt="">
+                            </div>
+                            <div class="text-section mb-5">
+                                <h1 class="head">FA46 TOP CASES #1</h1>
+                                <p class="desc">Lorem ipsum dolor sit amet, consectetur.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="item h-100vh-header w-100">
-                        <div class="pa-center text-light">
-                            <div class="bg-section">
-                                <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/sliders/home/s1.jpg');">
-                                </div>
-                            </div>
-
-                            <div class="text-section d-flex flex-column justify-content-end pa-center p-5">
-                                <div class="row align-items-end">
-                                    <div class="col-lg-5">
-                                        <div class="text-canvas d-flex flex-column justify-content-center">
-                                            <h1 class="head text-uppercase">Ride<br>your way</h1>
-                                            <p class="desc">At Furchtlos , we believe that great experiences are born from breaking rules and pushing limits...</p>
-                                            <div class="button-section deco-none mt-3">
-                                                <a href="#"><img class="icon-hex d-inline mr-3" src="assets/img/icons/hex-icon.svg">Explore</a>
+                    <!-- <div id="carousel-product-items" class="splide" role="group">
+                        <div class="splide__track">
+                              <ul class="splide__list d-flex align-items-center">
+                                  <li class="splide__slide">
+                                      <div class="item d-flex flex-row align-items-center">
+                                            <div class="image-section">
+                                                <img src="assets/img/dummy/products/alum-cases/dummy.png" alt="">
                                             </div>
+                                            <div class="text-section mb-5">
+                                                <h1 class="head">FA46 TOP CASES #1</h1>
+                                                <p class="desc">Lorem ipsum dolor sit amet, consectetur.</p>
+                                            </div>
+                                      </div>
+                                  </li>
+                                  <li class="splide__slide">
+                                    <div class="item d-flex flex-row align-items-center">
+                                        <div class="image-section">
+                                            <img src="assets/img/dummy/products/alum-cases/dummy.png" alt="">
+                                        </div>
+                                        <div class="text-section mb-5">
+                                            <h1 class="head">FA46 MIDDLE CASES #2</h1>
+                                            <p class="desc">Lorem ipsum dolor sit amet, consectetur.</p>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                  </li>
+                                  <li class="splide__slide">
+                                        <div class="item d-flex flex-row align-items-center">
+                                            <div class="image-section">
+                                                <img src="assets/img/dummy/products/alum-cases/dummy.png" alt="">
+                                            </div>
+                                            <div class="text-section mb-5">
+                                                <h1 class="head">FA46 BOTTOM CASES #3</h1>
+                                                <p class="desc">Lorem ipsum dolor sit amet, consectetur.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                              </ul>
                         </div>
-                    </div>
+                      </div> -->
                 </div>
             </div>
         </div>
@@ -222,20 +284,42 @@
 <script src="assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="assets/plugins/aos/aos.js"></script>
 <script src="assets/plugins/nouislider/nouislider.min.js"></script>
+<script src="assets/plugins/splide/splide.min.js"></script>
 <script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+<script src="assets/plugins/parallax/parallax.min.js"></script>
 <script src="assets/plugins/fontawesome/all.js"></script>
+<script src="assets/plugins/nouislider/nouislider.min.js"></script>
 <script src="assets/js/script.js"></script>
 
 <script type="text/javascript">
 
-$('.carousel-full').owlCarousel({
+var main = new Splide('#carousel-full', {
+    type   : 'loop',
+    padding: '10%',
+    gap: '-270px',
+    rewind    : true,
+    pagination: false,
+    arrows    : false,
+    autoplay: false,
+    interval: 5000
+});
+
+// var productItems = new Splide('#carousel-product-items', {
+//     type   : 'loop',
+//     perPage: 2
+// });
+
+main.mount();
+// productItems.mount();
+
+$('#carousel-product-items').owlCarousel({
     loop:true,
+    center: true,
     margin:10,
     nav:true,
-    center: true,
     responsive:{
         0:{
-            items:1
+            items:2
         },
         600:{
             items:2

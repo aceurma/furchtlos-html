@@ -1,5 +1,17 @@
-/* Laptops */
+/* Laptops - LG*/
 @media screen  and (min-device-width: 1200px)  and (max-device-width: 1600px)  and (-webkit-min-device-pixel-ratio: 1) {
+    /* Height and Width */
+    .h-100vh-lg-header { height: calc(100vh - 70px); }
+    .h-80vh-lg-header { height: calc(80vh - 70px); }
+    .h-75vh-lg-header { height: calc(75vh - 70px); }
+
+    /* Slider */
+    .slider-full-canvas .carousel-section .item .text-canvas > h1.head { font-size: 50px; line-height: 60px!important; }
+    
+    /* Pattern */
+    .parallax-pattern .img-pattern.left { left: -10rem; width: 51.19rem; pointer-events: none; }
+    .parallax-pattern .img-pattern.right { z-index: -2; top: 65rem; left: 50rem; width: 60rem; pointer-events: none; }
+    
     /* Blocks */
     .block-menu-canvas .blocks-section > .block:nth-child(2) .text-section .text-canvas, .block-menu-canvas .blocks-section > .block:last-child .text-section .text-canvas { padding-left: 1rem; } 
 }
