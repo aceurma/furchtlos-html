@@ -79,7 +79,7 @@
                     <div id="carousel-full" class="splide pa-center" role="group">
                         <div class="splide__track">
                             <div class="splide__list">
-                                <div class="splide__slide item h-80vh-header h-100vh-lg-header" tab-index="1">
+                                <div class="splide__slide item" tab-index="1">
                                     <div class="pa-center text-light">
                                         <div class="bg-section">
                                             <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/sliders/home/s1.jpg');">
@@ -101,7 +101,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="splide__slide item h-80vh-header h-100vh-lg-header" tab-index="2">
+                                <div class="splide__slide item" tab-index="2">
                                     <div class="pa-center text-light">
                                         <div class="bg-section">
                                             <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/home/banners/banner_alum-cases.jpg');">
@@ -123,7 +123,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="splide__slide item h-80vh-header h-100vh-lg-header" tab-index="3">
+                                <div class="splide__slide item" tab-index="3">
                                     <div class="pa-center text-light">
                                         <div class="bg-section">
                                             <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/home/banners/banner_motor-bags.jpg');">
@@ -145,7 +145,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="splide__slide item h-80vh-header h-100vh-lg-header" tab-index="2">
+                                <div class="splide__slide item" tab-index="2">
                                     <div class="pa-center text-light">
                                         <div class="bg-section">
                                             <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/home/banners/banner_alum-cases.jpg');">
@@ -203,7 +203,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 pl-0 pr-5">
-                    <div class="banner-section p-relative h-80vh-header w-100" data-aos="fade-right">
+                    <div class="banner-section p-relative w-100" data-aos="fade-right">
                         <div class="pa-center text-light">
                                 <div class="bg-section">
                                     <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/home/banners/banner_alum-cases.jpg') ;">
@@ -236,7 +236,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 pr-0 pl-5">
-                    <div class="banner-section p-relative h-80vh-header w-100" data-aos="fade-left">
+                    <div class="banner-section p-relative w-100" data-aos="fade-left">
                         <div class="pa-center text-light">
                             <div class="bg-section">
                                 <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/home/banners/banner_motor-bags.jpg') ;">
@@ -267,7 +267,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 pl-0 pr-5">
-                    <div class="banner-section p-relative h-80vh-header w-100" data-aos="fade-right">
+                    <div class="banner-section p-relative w-100" data-aos="fade-right">
                         <div class="pa-center text-light">
                             <div class="bg-section">
                                 <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/home/banners/banner_motor-clothing.jpg') ;">
@@ -300,7 +300,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 pr-0 pl-5">
-                    <div class="banner-section p-relative h-80vh-header w-100" data-aos="fade-left">
+                    <div class="banner-section p-relative w-100" data-aos="fade-left">
                         <div class="pa-center text-light">
                             <div class="bg-section">
                                 <div class="bg-cover-center pa-center inview_zoomIn" style="background-image: url('assets/img/home/banners/banner_motor-lights.jpg') ;">
@@ -523,8 +523,12 @@
     </div>
     
     <!-- Pattern -->
-    <img class="img-pattern left pa-center" src="assets/img/dummy/shapes/home-pattern.png" data-aos="fade-left" alt="">
-    <img class="img-pattern right pa-center" src="assets/img/dummy/shapes/home-pattern-right.png" data-aos="fade-left" alt="">
+    <div class="img-pattern-wrapper left">
+        <img class="img-pattern left pa-center" src="assets/img/dummy/shapes/home-pattern.png" data-aos="fade-right" alt="">
+    </div>
+    <div class="img-pattern-wrapper right">
+        <img class="img-pattern right pa-center" src="assets/img/dummy/shapes/home-pattern-right.png" data-aos="fade-left" alt="">
+    </div>
 </div>
 
 <!-- SCRIPTS -->

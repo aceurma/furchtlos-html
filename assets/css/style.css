@@ -239,13 +239,16 @@ p.overlay.text-overlay.center { left: 0; right: 0; opacity: 0.05; }
 
 /* Pattern */
 .parallax-pattern { overflow: hidden; }
-.parallax-pattern .img-pattern.left { z-index: -1; left: -15rem; width: 57.8rem; pointer-events: none; }
-.parallax-pattern .img-pattern.right { z-index: -2; top: 80rem; left: 74rem; width: 75rem; pointer-events: none; }
+
+.parallax-pattern .img-pattern-wrapper.left { position: absolute; top: 0; left: -15rem; height: 82.3rem; width: 55rem; overflow: hidden; z-index: -1; }
+.parallax-pattern .img-pattern-wrapper.left img, .parallax-pattern .img-pattern-wrapper.right img { width: 100%; height: 100%; object-fit: cover; }
+
+.parallax-pattern .img-pattern-wrapper.right { position: absolute; top: 70rem; right: -25rem; height: 100rem; width: 55rem; overflow: hidden; z-index: 1; }
 
 /* Sliders */
 .bg-section { width: 100%; height: 100%; position: relative; overflow: hidden; }
 .bg-contain-center, .bg-cover-center { background-position: 50%; background-repeat: no-repeat; background-size: cover; }
-/* .slider-full-canvas .carousel-section { overflow: hidden; } */
+.slider-full-canvas .carousel-section .item { height: 700px; }
 .slider-full-canvas .carousel-section .item .text-canvas > h1.head { font-size: 60px; line-height: 70px!important; }
 .slider-full-canvas .carousel-section .item .text-section { z-index: 3; margin: 0 5.5rem; }
 .slider-full-canvas .carousel-section .item .text-section .text-canvas { width: 70%; }
@@ -389,6 +392,7 @@ p.overlay.text-overlay.center { left: 0; right: 0; opacity: 0.05; }
 .navbar-light .navbar-brand .logo > img.brand { width: 2.5rem; }
 
 /* Basic Banner */
+.basic-banner-canvas .banner-section { height: 570px; }
 .basic-banner-canvas { position: relative; overflow-x: hidden; z-index: -1; }
 .basic-banner-canvas .banner-section { overflow: hidden; }
 .basic-banner-canvas .text-canvas { z-index: 3; }
@@ -401,7 +405,7 @@ p.overlay.text-overlay.center { left: 0; right: 0; opacity: 0.05; }
 
 
 /* Blocks */
-.block-menu-canvas .blocks-section .block { height: calc(70vh - 20px); transition: all 0.5s ease; }
+.block-menu-canvas .blocks-section .block { /* height: calc(70vh - 20px); */ height: 550px; transition: all 0.5s ease; }
 .block-menu-canvas .blocks-section .block:hover { cursor: pointer; transform: scale(1.03); z-index: 1; } 
 .block-menu-canvas .blocks-section .block-wrapper { transition: all 0.5s ease!important; }
 .block-menu-canvas .blocks-section .block-wrapper:hover { filter: drop-shadow(0 0 0.5rem #505050); z-index: 1; }
@@ -415,7 +419,7 @@ p.overlay.text-overlay.center { left: 0; right: 0; opacity: 0.05; }
 .block-menu-canvas .blocks-section > .block-wrapper:last-child { width: 35%; margin-left: -7%; }
 
 /* Map Banner */
-.map-banner-canvas .map-section { overflow: hidden; height: calc(65vh - 50px); }
+.map-banner-canvas .map-section { overflow: hidden; /* height: calc(65vh - 50px); */ height: 400px; }
 .map-banner-canvas .map-section > .text-section { clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%); }
 
 /* Dealers */
