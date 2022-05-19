@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1258.1 2705.9" style="enable-background:new 0 0 1258.1 2705.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.9;fill:url(#Path_84_00000019642218894798259910000018275335123607516828_);enable-background:new    ;}
+	.st1{opacity:0.9;fill:url(#Path_23_00000013890625726754136890000016400470057974863272_);enable-background:new    ;}
+</style>
+<linearGradient id="Path_84_00000109012440141623431790000004446404541461625499_" gradientUnits="userSpaceOnUse" x1="-329.4383" y1="1891.7672" x2="-329.4897" y2="1892.1813" gradientTransform="matrix(-1258.061 0 0 2705.916 -414232.0938 -5118780)">
+	<stop  offset="0" style="stop-color:#000000;stop-opacity:0"/>
+	<stop  offset="0.368" style="stop-color:#0C0C0C;stop-opacity:0.953"/>
+	<stop  offset="0.464" style="stop-color:#0C0C0C;stop-opacity:0.957"/>
+	<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
+</linearGradient>
+<path id="Path_84" style="opacity:0.9;fill:url(#Path_84_00000109012440141623431790000004446404541461625499_);enable-background:new    ;" d="
+	M94.5,0l-168,108.4l375,552.3l94.3-47.9c0,0-423,642-426.2,647.4L131,1375.1l434.8-665.9L94.5,0z"/>
+<linearGradient id="Path_23_00000163791732724965758020000015113631731805333176_" gradientUnits="userSpaceOnUse" x1="-328.8969" y1="1892.8392" x2="-328.9122" y2="1892.3256" gradientTransform="matrix(1173.4561 0 0 -2299.364 386910.5 4353509)">
+	<stop  offset="0" style="stop-color:#000000;stop-opacity:0"/>
+	<stop  offset="0.397" style="stop-color:#111111;stop-opacity:0.937"/>
+	<stop  offset="0.602" style="stop-color:#0C0C0C;stop-opacity:0.957"/>
+	<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
+</linearGradient>
+<path id="Path_23" style="opacity:0.9;fill:url(#Path_23_00000163791732724965758020000015113631731805333176_);enable-background:new    ;" d="
+	M1012.1,1195.1h253l-351.5,572.4l-101.5-54.7c0,0,455.3,733.9,458.8,740.1H1018l-389-629.9L1012.1,1195.1z"/>
+</svg>
