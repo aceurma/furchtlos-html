@@ -517,8 +517,8 @@ div#ProductRelated .owl-carousel .owl-item:hover {border-bottom:1px solid #000;}
   #myADD.show, #myMAP.show {opacity:1!important;left:0!important;transition: 1s;}
   .hide {opacity:0;transition:opacity 1s;left: -50%; transition: 1s;}
   button.map-find-dealer {display: block; background: transparent; border: none; width: 20px; color: #fff; margin-bottom: 20px;}
-  .map-section {background: url(../img/home/banners/banner_map.jpg); background-size: cover; background-position: right;}
-/*
+
+ /* .map-section {background: url(../img/home/banners/banner_map.jpg); background-size: cover; background-position: right;}
 .splide__pagination__page {  border-radius: 0 !important;
     width: 100px !important;
     height: 5px !important;
@@ -874,20 +874,20 @@ section.sec-section {  padding-bottom: 120px;}
 	.product #carousel-thumb {bottom: -25rem; left: -16vw;}
 	.product .splide__slide.item{margin-right: -50px!important;	width: calc(((100% + -40px) / 1) - -50px)!important;}
 	.product-title-wrapper p.head.text-uppercase.left {	font-size: 3rem;}
-	.prod-img {top: 26vh;}
+	.prod-img {top: 22vh;}
     .prod-img img {width: 100%;	}
 	.motorcyclebags-wrapper {position: absolute;top: 137vh;	left: 3rem;	}
 	.motorcycleclothing-wrapper {position: absolute;top: 212vh;right: unset;}
 	.motorcycle-lights-wrapper {position: absolute;	top: 270vh;	left: 3rem;	}
 	#ProductDetails .first-section img {width: 100%;}
-	.second-sec  .second-product-wrapper img {width: 100%;}
+	.second-sec  .second-product-wrapper img {width: 90%;}
 	#ProductDetails h1.head {font-size: 3rem;	margin-top: -2rem;	}
 	#ProductDetails .brand-title {font-size: 4rem;	}
 	.aluminum-case-wrapper {right: unset;left: 3rem;	}
 	h1 {font-size: 2.5rem;	}
    .mission-wrap {padding-top:1rem!important;}
    section.sec-section {padding-bottom: 150px; margin-top: 30px;}
-   .second-product-wrapper p.desc.text-white.top-txt { top: 20px;z-index:9;padding-bottom: 40px;}
+   .second-product-wrapper p.desc.text-white.top-txt { top: 80px;z-index:9;padding-bottom: 40px;}
    .sec-section .diag.l-r.bottom {clip-path: polygon(110% 70%, 81% 140%, 65% 105%, -95% 100%);padding-bottom: 40px;}
    div#ProductRelated { margin-left: 1rem; margin-right: 1rem;}
    .main-footer-canvas .menu-section .links > .copyright img { width: 16rem; }
@@ -895,7 +895,9 @@ section.sec-section {  padding-bottom: 120px;}
    .prod-img h1.head.text-uppercase { font-size: 1.6rem;}
    .slider-canvas .carousel-section #carousel-product-items.owl-carousel .owl-item img { width:2.5rem;}
    #ProductDetails .col-sm { flex: unset;}
-   .second-product-wrapper p.desc.text-white.bottom-txt {  bottom: 10px;}
+   .second-product-wrapper p.desc.text-white.bottom-txt {  bottom: 50px;}
+   .second-product-wrapper { top: 23vh;}
+   .prod-gray-bottom { clip-path: polygon(126% 65%, 103% 103%, 43% 103%, -8% 100%); background: #000;}
 }
 @media (max-width: 376px) {
 	.prod-img {top: 25vh;}
